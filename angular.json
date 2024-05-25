@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "tesla-configurator": {
+    "tesla-configurator-test": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/tesla-configurator",
+            "outputPath": "dist/tesla-configurator-test",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -63,10 +63,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "tesla-configurator:build:production"
+              "buildTarget": "tesla-configurator-test:build:production"
             },
             "development": {
-              "buildTarget": "tesla-configurator:build:development"
+              "buildTarget": "tesla-configurator-test:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -74,7 +74,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "tesla-configurator:build"
+            "buildTarget": "tesla-configurator-test:build"
           }
         },
         "test": {
